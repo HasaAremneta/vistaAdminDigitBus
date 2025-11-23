@@ -1,0 +1,42 @@
+<div class="pagina">
+  <!-- Botón de regreso -->
+  <div style="margin-bottom: 16px;">
+    <button class="flecha" (click)="regresar()" style="background: none; border: none; cursor: pointer;">
+      ← Regresar
+    </button>
+  </div>
+
+  <h1>Revisión de solicitud</h1>
+  <section class="card">
+    <div class="card-header">
+      <button class="tab-header">
+        <span>ID</span>
+        <span>Nombre de usuario</span>
+      </button>
+    </div>
+    <div class="card-body">
+      <span class="id">{{ solicitudId }}</span>
+      <span class="nombre">{{ nombreUsuario }}</span>
+    </div>
+  </section>
+
+  <!-- Resto del código igual -->
+  <section class="docs-section">
+    <h2>Documentación</h2>
+    <div class="doc-row" *ngFor="let doc of documentos">
+      <div class="doc-info">
+        <span class="doc-tipo">{{ doc.tipo }}:</span>
+        <a [href]="doc.url" class="doc-link">{{ doc.nombreArchivo }}</a>
+      </div>
+      <button class="btn-outline" (click)="solicitarCambio(doc)">
+        Solicitar cambio/subida del doc.
+      </button>
+    </div>
+  </section>
+
+  <div class="footer">
+    <button class="btn-accept" (click)="aceptarSolicitud()">
+      Aceptar solicitud
+    </button>
+  </div>
+</div>

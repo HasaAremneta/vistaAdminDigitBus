@@ -1,0 +1,75 @@
+.pagina {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  padding: 16px;
+  color: #1f2937;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.flecha {
+  font-size: 20px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.tabla-incidentes {
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.tabla-incidentes th,
+.tabla-incidentes td {
+  padding: 8px 14px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.tabla-incidentes thead th {
+  font-weight: 600;
+  color: #1e40af;
+  border-bottom: 1px solid #dbeafe;
+  background-color: #f0f9ff;
+}
+
+.col-id {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.link-azul {
+  color: #2563eb;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link-azul:hover {
+  text-decoration: underline;
+}
+
+.status-revision {
+  color: #92400e;
+  font-weight: 500;
+  background-color: #fef3c7;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.status-concluida {
+  color: #15803d;
+  font-weight: 500;
+  background-color: #dcfce7;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.accion {
+  font-weight: 500;
+}
+
+.columnaTitulos{
+ border: 2px solid #2563eb; 
+ }

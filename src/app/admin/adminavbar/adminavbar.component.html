@@ -1,0 +1,14 @@
+<nav class="sidebar" [class.sidebar--open]="isOpen" *ngIf="true">
+  <ul class="sidebar__links">
+    <li [class.active]="isActive('usuario')">
+      <a [routerLink]="['/admin/usuario']" routerLinkActive="active-link">Usuarios</a>
+    </li>
+    <li [class.active]="isActive('solicitudes')">
+      <a [routerLink]="['/admin/solicitudes']" routerLinkActive="active-link">Solicitudes</a>
+    </li>
+  </ul>
+
+  <button class="sidebar__logout">
+    Cerrar sesión
+  </button>
+</nav>
