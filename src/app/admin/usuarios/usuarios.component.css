@@ -1,0 +1,117 @@
+/* Layout general */
+.layout {
+  display: flex;
+  height: 100vh;
+  background: #f8f9ff;
+  font-family: 'Arial';
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #003da5;
+  color: white;
+  padding: 30px 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sidebar li.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.logout {
+  position: absolute;
+  bottom: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Contenido */
+.content {
+  flex: 1;
+  padding: 40px;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #006cff;
+  padding: 15px 20px;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+/* Títulos */
+.titulo {
+  font-size: 26px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Buscador */
+.buscador {
+  margin-bottom: 20px;
+}
+
+.buscador input {
+  padding: 8px 15px;
+  border-radius: 6px;
+  border: 1px solid gray;
+  width: 250px;
+}
+
+/* Tabla */
+.table-wrapper {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  color: #006cff;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 0;
+}
+
+td {
+  padding: 10px 0;
+}
+
+/* Botones */
+.btn-modificar {
+  color: #005dff;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn-eliminar {
+  color: red;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn-modificar:hover,
+.btn-eliminar:hover {
+  text-decoration: underline;
+}
